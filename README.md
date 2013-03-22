@@ -1,14 +1,14 @@
 jQuery-Toast
 =
 
-##Introduction
-<hr>
+## Introduction
+
 A Simple Android Style MessageBox(Toast).
 
 Rely on jQuery.
 
-##Quick Start
-<hr>
+## Quick Start
+
 Remember to call `init` function in order to insert the style
 
     Toast.init();
@@ -27,8 +27,8 @@ Further
        y: 200 
     }).show();
     
-##Tips
-<hr>
+## Tips
+
 The default position is calculated automaticly.
 
 If you want to control by yourself, please set `autoPos` to false, then input the `x` and `y` as you want ( **function can be accept, too** ) .
