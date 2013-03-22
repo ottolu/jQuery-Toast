@@ -15,7 +15,7 @@
  *     Toast({text: "hello, world", 
  *           time: 2000, 
  *           autoPos: false, 
- *           x: function(){ return 100;}, 
+ *           x: function(){ return 100;},
  *           y: 200 }).show();
  */
 (function(exports, $, undefined) {
