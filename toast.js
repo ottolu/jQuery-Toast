@@ -90,7 +90,7 @@
 		return {
 			show: function(closeByUrself) {
 				$ele.show();
-				//if (!!closeByUrself) return this;
+				if (!!closeByUrself) return this;
 				setTimeout(function() {
 					$ele.fadeOut(function() {
 						$ele.remove();
