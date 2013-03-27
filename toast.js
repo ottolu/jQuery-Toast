@@ -85,7 +85,17 @@
 
 		$ele.hide();
 
-		$ele.fadeOut = $ele.fadeOut || $ele.hide;
+		$ele.fadeOut = $ele.fadeOut || (function() {
+			var opacity = 1, el = $ele, time = 25;
+			return function() {
+				setTimeout(function() {
+					opacity -= 0.1;
+					el.css('opacity', opacity);
+					if (opacity <= 0) return;
+					setTimeout(arguments.callee, time);
+				}, time);
+			}
+		})();
 
 		return {
 			show: function(closeByUrself) {
