@@ -3,7 +3,7 @@
  *
  * A Simple Android Style MessageBox(Toast)
  *
- * @ Version: 0.003
+ * @ Version: 0.005
  *
  * @ Example:
  *     You should call
@@ -18,7 +18,7 @@
  *           x: function(){ return 100;},
  *           y: 200 }).show();
  */
-(function(exports, $, undefined) {
+;(function(exports, $, undefined) {
 
 	var Toast = function(opt) {
 
