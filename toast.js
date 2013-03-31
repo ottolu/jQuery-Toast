@@ -25,6 +25,7 @@
 		(typeof opt === 'string') && (opt = {
 			text: opt
 		});
+
 		(typeof opt === 'object') || (opt = {});
 
 		var options = {
@@ -43,6 +44,7 @@
 			}
 		}
 
+		// to allow past a function to setup
 		for (name in options) {
 			if (options.hasOwnProperty(name) && typeof options[name] === 'function') {
 				options[name] = options[name]();
@@ -98,9 +100,9 @@
 		})();
 
 		return {
-			show: function(closeByUrself) {
+			show: function(ControlUrself) {
 				$ele.show();
-				if (!!closeByUrself) return this;
+				if (!!ControlUrself) return this;
 				setTimeout(function() {
 					$ele.fadeOut(function() {
 						$ele.remove();
